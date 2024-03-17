@@ -1,0 +1,70 @@
+.nav:hover{
+    color: #ffffff;
+    background-color: #3d38b6;
+    transition: all 0.3s ease-in-out;
+}
+.nav:hover.scrolled{
+    color: black;
+    background-color: #8ba2ff;
+    transition: all 0.2s ease-in-out;
+}
+/* .navbar-nav:hover{
+    background-color: #fffe00;
+    transition: all 0.2s ease-in-out;
+} */
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:azure;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.05rem;
+    transition: all 0.2s ease-in-out;
+}
+.navbar-nav{
+    justify-content: space-between;
+    width: 100%;
+    /* padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x); */
+}
+.nav-item{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.navbar.navbar-expand-lg{
+    padding:0px;
+    background-Color:black;
+    z-Index:1;
+    position:fixed;
+    width:100vw;
+    transition: all 0.5s ease-in-out;
+}
+.navbar.navbar-expand-lg.scrolled{
+    background-Color:#02002a;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 1400px){
+.container{
+ max-width: 1522px;
+}
+.card{
+    height:40rem;
+}
+.card-img-top{
+    max-height: 49%;
+}
+}
+@media (max-width: 800px){
+    .card{
+     height:max-content;
+    }
+    .card-img-top{
+        max-height: max-content;
+    }
+}
